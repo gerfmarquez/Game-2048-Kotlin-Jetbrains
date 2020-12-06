@@ -62,6 +62,7 @@ fun GameBoard<Int?>.moveValuesInRowOrColumn(rowOrColumn: List<Cell>): Boolean {
     val mergedTiles = tiles.moveAndMergeEqual {
         it + it
     }
+    rowOrColumn.zip(mergedTiles)
     var isMoved = false
     val iterator = mergedTiles.iterator()
     for ( cell in rowOrColumn ) {
