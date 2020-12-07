@@ -1,5 +1,11 @@
 package games.gameOfFifteen
 
+/** This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Copyright 2020, Gerardo Marquez.
+ */
+
 /*
  * This function should return the parity of the permutation.
  * true - the permutation is even
@@ -13,25 +19,23 @@ package games.gameOfFifteen
 fun isEven(permutation: List<Int>): Boolean {
 
 
-    val path = permutation.toMutableList()
-    val permutations = permutation.flatMap { home ->
-        path.remove(home)
-        path.map { home to it }
-    }
+    val indexes = (0 .. permutation.size).toList()
 
-    val indexes = generateSequence(0) { it + 1 }
-            .take(permutation.size).toList()
-
-    val indexesPath = indexes.toMutableList()
     val indexesPermutations = indexes.flatMap { home ->
-        indexesPath.remove(home)
-        indexesPath.map { home to it }
+        with(indexes) {
+            takeLast(size - (indexOf(home) + 1))
+        }.map { home to it }
+    }
+    val permutations = permutation.flatMap { home ->
+        with(permutation) {
+            takeLast(size - (indexOf(home) + 1))
+        }.map { home to it }
     }
 
-    val isEven = indexesPermutations.zip(permutations)
-            .count { it.first.first < it.first.second &&
-                    it.second.first > it.second.second
-            }
+    val isEven = indexesPermutations.zip(permutations).count {
+        it.first.first < it.first.second
+                && it.second.first > it.second.second
+    }
 
     return isEven % 2 == 0
 }

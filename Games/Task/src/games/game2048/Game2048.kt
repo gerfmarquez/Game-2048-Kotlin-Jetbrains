@@ -6,6 +6,12 @@ import board.GameBoard
 import board.createGameBoard
 import games.game.Game
 
+/** This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Copyright 2020, Gerardo Marquez.
+ */
+
 /*
  * Your task is to implement the game 2048 https://en.wikipedia.org/wiki/2048_(video_game).
  * Implement the utility methods below.

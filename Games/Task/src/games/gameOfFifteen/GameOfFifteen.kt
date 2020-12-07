@@ -6,6 +6,12 @@ import board.GameBoard
 import board.createGameBoard
 import games.game.Game
 
+/** This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Copyright 2020, Gerardo Marquez.
+ */
+
 /*
  * Implement the Game of Fifteen (https://en.wikipedia.org/wiki/15_puzzle).
  * When you finish, you can play the game by executing 'PlayGameOfFifteen'.
@@ -19,13 +25,12 @@ class GameOfFifteen (private val initializer: GameOfFifteenInitializer ) : Game 
     private val board = createGameBoard<Int?>(4)
 
 
+    @ExperimentalStdlibApi
     override fun initialize() {
         val randomTiles = initializer.initialPermutation.toMutableList()
 
         board.getAllCells().forEach {
-            val first = randomTiles.firstOrNull()
-            board[it] = first
-            first?.let { randomTiles.remove(it) }
+            board[it] = randomTiles.removeFirstOrNull()
         }
     }
 

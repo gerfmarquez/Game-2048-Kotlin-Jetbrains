@@ -3,6 +3,12 @@ package games.ui
 import games.gameOfFifteen.newGameOfFifteen
 import java.awt.Color
 
+/** This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Copyright 2020, Gerardo Marquez.
+ */
+
 object GameOfFifteenSettings : GameSettings("Game of fifteen", Color(0x909090)) {
     private val emptyColor = Color(0x787878)
     private val firstColor = Color(0xC8C8C8)

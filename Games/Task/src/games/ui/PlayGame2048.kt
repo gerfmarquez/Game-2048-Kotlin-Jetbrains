@@ -3,6 +3,12 @@ package games.ui
 import games.game2048.newGame2048
 import java.awt.Color
 
+/** This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Copyright 2020, Gerardo Marquez.
+ */
+
 object Game2048Settings : GameSettings("Game 2048", Color(0xbbada0)) {
     private val emptyColor = Color(0xcdc1b4)
     private val colors: Map<Int, Color> = run {

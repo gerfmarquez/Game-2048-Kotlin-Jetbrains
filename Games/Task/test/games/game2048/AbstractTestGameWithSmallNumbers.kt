@@ -3,6 +3,12 @@ package games.game2048
 import board.GameBoard
 import board.createGameBoard
 
+/** This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ * Copyright 2020, Gerardo Marquez.
+ */
+
 abstract class AbstractTestGameWithSmallNumbers {
     private val width = 4
 

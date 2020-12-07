@@ -48,7 +48,7 @@ files:
 - name: src/board/BoardImpl.kt
   visible: true
   placeholders:
-  - offset: 132
+  - offset: 377
     length: 29
     placeholder_text: TODO()
     initial_state:
@@ -57,7 +57,7 @@ files:
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 214
+  - offset: 459
     length: 27
     placeholder_text: TODO()
     initial_state:
@@ -93,7 +93,7 @@ files:
 - name: src/games/game2048/Game2048.kt
   visible: true
   placeholders:
-  - offset: 1227
+  - offset: 1472
     length: 85
     placeholder_text: TODO()
     initial_state:
@@ -102,7 +102,7 @@ files:
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 1779
+  - offset: 2024
     length: 551
     placeholder_text: TODO()
     initial_state:
@@ -111,7 +111,7 @@ files:
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 2668
+  - offset: 2913
     length: 661
     placeholder_text: TODO()
     initial_state:
@@ -193,7 +193,7 @@ files:
 - name: src/games/game2048/Game2048Helper.kt
   visible: true
   placeholders:
-  - offset: 722
+  - offset: 967
     length: 267
     placeholder_text: TODO()
     initial_state:
@@ -229,7 +229,7 @@ files:
 - name: src/games/game2048/Game2048Initializer.kt
   visible: true
   placeholders:
-  - offset: 813
+  - offset: 1058
     length: 243
     placeholder_text: TODO()
     initial_state:
@@ -271,7 +271,7 @@ files:
 - name: src/games/gameOfFifteen/GameOfFifteen.kt
   visible: true
   placeholders:
-  - offset: 399
+  - offset: 644
     length: 31
     placeholder_text: TODO()
     initial_state:
@@ -299,8 +299,8 @@ files:
 - name: src/games/gameOfFifteen/GameOfFifteenHelper.kt
   visible: true
   placeholders:
-  - offset: 477
-    length: 646
+  - offset: 722
+    length: 574
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -328,7 +328,7 @@ files:
 - name: src/games/gameOfFifteen/GameOfFifteenInitializer.kt
   visible: true
   placeholders:
-  - offset: 569
+  - offset: 814
     length: 17
     placeholder_text: TODO()
     initial_state:
@@ -1619,5 +1619,5 @@ status: Unchecked
 feedback:
   message: <html>Submission successful, please <a href="https://www.coursera.org/learn/kotlin-for-java-developers/programming/NSid0/game-2048-game-of-fifteen/submission">check
     the status on Coursera</a></html>
-  time: Sun, 06 Dec 2020 12:26:11 UTC
+  time: Sun, 06 Dec 2020 12:27:58 UTC
 record: -1
